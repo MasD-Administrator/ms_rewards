@@ -39,19 +39,22 @@ def open_specific_account(no_on_list):
     sleep(.6)
 
 def close_account():
-    global accounts_opened
     pg.hotkey("alt", "f4")
     sleep(.8)
-    accounts_opened -= 1
 
 def main():
-    searcher = searching.Search(30, .1, .1, .1, 1, 2)
+    searcher = searching.Search(30, .1, .1, .1, 3, 2)
     # 697 is the optimal no of scroll clicks to make the whole page move so that the same picture is 
     # not shown again when searching for images of points (is that really neccessary)
-    mp = major_points.MajorPoints(2.7, .2, 3, 8, .2, .2, .2, .97, .97, -697,  "+10points.png", "+5points.png")
+    mp = major_points.MajorPoints(2.7, .2, 3, 8, .2, .2, .2, .96, .96, -697,  "+10points.png", "+5points.png")
 
+    
     open_browser()
-    mp.collect_points()
+
+    for i in range(0, 3):
+        open_next_account()
+        sleep(.4)
+        close_account()
 
 if __name__ == "__main__":
     main()

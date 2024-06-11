@@ -39,8 +39,6 @@ class MajorPoints:
 
         for i in range(0, self.no_of_scrolls):
             sleep(self.waiting_time_before_scrolling)
-            pg.hscroll(self.scroll_amount)
-            sleep(self.waiting_time_after_scrolling)
             try:
                 point_10_list = list(pg.locateAllOnScreen(self.point10_image_path, confidence=self.point10_confidence_rate))
                 for point_10 in point_10_list:
@@ -54,4 +52,8 @@ class MajorPoints:
                     self.complete_point_collection(point_5)
             except ImageNotFoundException:
                 pass
+            
+            pg.hscroll(self.scroll_amount)
+            sleep(self.waiting_time_after_scrolling)
+            
             sleep(self.scroll_pause)
