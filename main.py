@@ -70,7 +70,7 @@ def close_account():
 def main():
     open_browser()
     
-    # searching.Search(no_of_seraches, type_speed, wait_time_after_opening_tab ,wait_time_after_closing_tab, sentence_max_words, time_to_detect_reward_collection)
+    searching.Search(no_of_seraches, type_speed, wait_time_after_opening_tab ,wait_time_after_closing_tab, sentence_max_words, time_to_detect_reward_collection)
     major_points.MajorPoints(time_to_redeem_point, wait_time_after_point_collection, ms_reward_page_loading_time, no_of_scrools, waiting_time_after_scrolling, waiting_time_before_scrolling, scroll_pause, point_10_confidence_rate, point_5_confidence_rate, scroll_amount)
 
     
