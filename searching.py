@@ -23,7 +23,9 @@ class Search:
             
     def actual_search(self, text):
         sleep(.2)
-        pg.write(text)
+        for character in text:
+            pg.press(str(character))
+            sleep(random.uniform(0.01, self.type_speed))
         pg.press("enter")
 
     def new_tab(self):

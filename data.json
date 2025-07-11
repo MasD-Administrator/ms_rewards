@@ -1,16 +1,16 @@
 {
     "no_of_seraches": 30,
-    "type_speed": 0,
+    "type_speed": 0.006,
     "wait_time_after_opening_tab": 0.04,
     "wait_time_after_closing_tab": 0.1,
     "sentence_max_words": 2,
-    "time_to_detect_reward_collection": 1,
+    "time_to_detect_reward_collection": 2.5,
 
 
-    "time_to_redeem_point": 3.7,
-    "wait_time_after_point_collection": 0.2,
+    "time_to_redeem_point": 2,
+    "wait_time_after_point_collection": 0.7,
     "ms_reward_page_loading_time": 3,
-    "no_of_scrools": 6,
+    "no_of_scrools": 8,
     "waiting_time_after_scrolling": 0.2,
     "waiting_time_before_scrolling": 0.2,
     "scroll_pause": 0.2,

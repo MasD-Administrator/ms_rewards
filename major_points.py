@@ -8,6 +8,8 @@ class MajorPoints:
                  ms_rewards_page_loading_time, no_of_scrolls, waiting_time_after_scrolling,
                  waiting_time_before_scrolling, scroll_pause, point10_confidence_rate,
                  point5_confidence_rate, scroll_amount):
+        
+        
         self.time_to_redeem_point = time_to_redeem_point
         self.wait_time_after_point_collection = wait_time_after_point_collection
         self.ms_rewards_page_loading_time = ms_rewards_page_loading_time
